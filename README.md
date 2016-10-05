@@ -14,10 +14,10 @@
 * Populate the slider with as many slides as you like. Each slide can have:
  * An image
  * Text (displayed as either dark or light)
- * An optional link, either to a page on the site or an external url
+ * An optional link, either to a page on the site or to an external url
 * If `GridFieldSortableRows` is installed slides can be reordered using drag-n-drop
 * Checkbox controls whether or not to include default css
-* Checkbox turns on or off automatic sliding
+* Checkbox turns automatic sliding on or off
 
 
 # Installation
