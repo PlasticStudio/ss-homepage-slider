@@ -33,14 +33,21 @@
 		<% end_loop %>
 		
 		<% if Slides.Count > 1 %>
+
+			<% if SliderNavType = 'PrevNext' %>
+				<a class="fa fa-chevron-left slider-nav-arrow prev" href="javascript:void(0);" data-direction="prev"></a>
+				<a class="fa fa-chevron-right slider-nav-arrow next" href="javascript:void(0);" data-direction="next"></a>
+			<% else %>
 		
-			<nav class="slider-nav">
-			
-				<% loop Slides %>
-					<a href="javascript:void(0);" class="$FirstLast<% if First %> current<% end_if %>" data-slide="$Pos"></a>
-				<% end_loop %>
-			
-			</nav>
+				<nav class="slider-nav">
+				
+					<% loop Slides %>
+						<a href="javascript:void(0);" class="$FirstLast<% if First %> current<% end_if %>" data-slide="$Pos"></a>
+					<% end_loop %>
+				
+				</nav>
+
+			<% end_if %>
 			
 		<% end_if %>
 		
