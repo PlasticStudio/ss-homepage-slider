@@ -67,3 +67,35 @@
 .slider-nav a.current {
 	background: #333;
 }
+
+  .slider .slider-nav-arrow {
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    display: block;
+    height: 40px;
+    margin: -20px 0 0;
+    overflow: hidden;
+    position: absolute;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+    top: 50%;
+    transition: all 0.3s ease 0s;
+    width: 40px;
+    z-index: 10;
+    color: #fff;
+    font-size: 2em;
+    height: 50px;
+    line-height: 50px;
+    text-decoration: none;
+    border: none;
+}
+.slider .slider-nav-arrow::before {
+  display: inline-block;
+  font-size: 40px;
+  text-shadow: 0px 0px 3px #232128;
+}
+.slider .slider-nav-arrow.prev {
+  left: 20px;
+}
+.slider .slider-nav-arrow.next {
+  right: 20px;
+}
