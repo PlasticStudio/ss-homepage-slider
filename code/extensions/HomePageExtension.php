@@ -47,11 +47,12 @@ class HomePage_ControllerExtension extends Extension {
 	public function onBeforeInit(){
 		Requirements::javascript(THIRDPARTY_DIR.'/jquery/jquery.js');
 		Requirements::javascript(HOMEPAGESLIDER_DIR.'/js/homepage-slider.js');
-		if($this->owner->SliderNavType == 'PrevNext'){
-			// FONT AWESOME
-			Requirements::css('//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css');
-		}
+		
 		if($this->owner->IncludeCSS){
+			if($this->owner->SliderNavType == 'PrevNext'){
+				// use font-awesome arrows for prev/next navigation
+				Requirements::css('//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css');
+			}
 			Requirements::css(HOMEPAGESLIDER_DIR.'/css/homepage-slider.css');
 		}
 		
