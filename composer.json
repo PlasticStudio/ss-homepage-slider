@@ -1,5 +1,5 @@
 {
-	"name": "PlasticStudio/SSHomepageSlider",
+	"name": "plasticstudio/ss-homepage-slider",
     "type": "silverstripe-module",
 	"description": "Simple homepage slider plugin for SilverStripe websites",
 	"keywords": ["silverstripe"],
