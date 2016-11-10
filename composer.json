@@ -1,0 +1,16 @@
+{
+	"name": "PlasticStudio/SSHomepageSlider",
+    "type": "silverstripe-module",
+	"description": "Simple homepage slider plugin for SilverStripe websites",
+	"keywords": ["silverstripe"],
+	"require": {
+		"silverstripe/cms": "~3.1",
+		"silverstripe/framework": "~3.1"
+	},
+    "extra": {
+        "installer-paths": {
+            "{$name}": ["vendor/package"]
+        }
+    },
+	"minimum-stability": "dev"
+}
